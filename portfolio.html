@@ -4,26 +4,27 @@
     <meta charset="utf-8" />
     <title>About</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/override.css" />
   </head>
 
   <body>
-    <header class="clearfix">
-      <div id="headContain">
-      <h1>Melissa Waltner</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      </div>
-      </header>
+      <nav class="navbar">
+          <div class="container-fluid">
+            <div  class="navbar-header">
+              <a class="navbar-brand">Melissa Waltner</a>
+            </div>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>  
+          </div>
+        </nav>
       
-      <div class="container clearfix">    
-        <section id="portfolio" class="clearfix">
+        <div class="container-fluid">
+            <div class="row">
+              <section class="col-md-8 border">
           <h2>Portfolio</h2>
           <div id="list" class="clearfix">
           <div class="items clearfix">
@@ -59,17 +60,18 @@
         </div>
         </section>
 
-        <section id="social">
-            <h3>Connect with Me</h3>
-            <p class="clearfix">
-                <a href="https://github.com/SuiteMel"><img src="assets/images/github.png" alt="github logo"></a>
-                <a href="https://www.linkedin.com/in/melissawaltner/"><img src="assets/images/linkedin.png" alt="linkedin logo"></a>
-              <a href="https://stackoverflow.com/users/9150596/suitemel"><img src="assets/images/stackoverflow.png" alt="stackoverflow logo" /></a>
-              </p>
-          </section>
+        <aside class="col-md-3 border text-center clearfix">
+            <h3 class="clearfix">Connect with Me</h3>
+            <div class="clearfix">
+              <a href="https://github.com/SuiteMel" ><img src="assets/images/github.png" class="img pull-left" alt="github logo"></a>
+            <a href="https://www.linkedin.com/in/melissawaltner/"><img src="assets/images/linkedin.png" class="img pull-left" alt="linkedin logo"></a>
+            <a href="https://stackoverflow.com/users/9150596/suitemel" ><img src="assets/images/stackoverflow.png" class="img pull-left" alt="stackoverflow logo" /></a>
+            </div>
+          </aside>
         </div>
+      </div>
 
-          <footer>
+          <footer class="text-center">
             <p>&copy; Copyright 2018 Melissa Waltner</p>
           </footer>
   </body>
